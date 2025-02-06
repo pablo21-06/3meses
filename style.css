@@ -1,0 +1,58 @@
+body {
+    background-color: #ffdde1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    overflow: hidden;
+}
+
+.container {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 2s ease-in-out;
+}
+
+h1 {
+    color: #ff4a6e;
+    font-size: 2em;
+}
+
+p {
+    color: #333;
+    font-size: 1.2em;
+}
+
+button {
+    background: #ff4a6e;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #ff1e4d;
+    transform: scale(1.1);
+}
+
+/* Animación de corazones flotando */
+@keyframes floatingHearts {
+    from { transform: translateY(0); opacity: 1; }
+    to { transform: translateY(-100vh); opacity: 0; }
+}
+
+.heart {
+    position: fixed;
+    color: red;
+    font-size: 20px;
+    animation: floatingHearts 4s linear infinite;
+}
